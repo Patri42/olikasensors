@@ -48,6 +48,8 @@ char * ftos(char * buf, unsigned char W, unsigned char D, float data)
   // get the first whole number and convert it
   buf[0 + shf] = Wdata / Pow2(10, W - 1) + '0';
   tmp = Wdata % Pow2(10, W - 1);
+  printf("%d",tmp);
+  //min ändring
 
   //now get the rest of the whole numbers
   for (unsigned char i = 1; i < W; i++)
