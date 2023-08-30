@@ -6,9 +6,7 @@
 #include <util/delay.h>
 #include <stdbool.h> 
 
-
 #define PINNE_A0 0
-
 
 #define BIT_SET(a, b) ((a) |= (1ULL << (b)))
 #define BIT_CLEAR(a,b) ((a) &= ~(1ULL<<(b)))
@@ -98,7 +96,7 @@ int main(){
 		char txt[30];
 		printf("%s\n", ftos(txt,3,2,celsius));
     //
-    // printf("%.2f\n", celsius);
+    printf("%.c\n", "H");
 		_delay_ms(1000);
 	}
 	return 0;
